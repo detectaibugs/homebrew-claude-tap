@@ -15,7 +15,7 @@ We've **archived the v1 tap repository** and started fresh with this v2 tap to d
 **What's new in v2.0:**
 - 🚀 **Rewritten in Go** - 10x faster, single binary, no dependencies
 - 🔐 **Enhanced security** - Automatic session cleanup, proprietary prompt protection
-- 🎯 **Multi-agent support** - Works with Claude Code, OpenAI Codex, and more
+- 🎯 **Multi-agent support** - Works with Claude Code (Codex support paused until v2.1.0)
 - ⚙️ **Better reliability** - Robust error handling, automatic retries, fallback modes
 - 📦 **Cleaner distribution** - Professional packaging via Homebrew
 
@@ -71,7 +71,7 @@ That's it! DetectAIBugs will analyze your code, detect bugs, and provide actiona
 - **🔒 Secure by Default** - Automatic history cleanup protects proprietary prompts
 - **📊 Rating Layer** - Optional response validation/modification via your API
 - **⚙️ Git Integration** - Helpful reminders after `git add` and `git status`
-- **🎯 Multiple Agents** - Same CLI works with Claude, Codex, and future AI assistants
+- **🎯 Multiple Agents** - Works with Claude Code (Codex support paused until v2.1.0 - Nov 26th)
 
 ---
 
@@ -94,8 +94,11 @@ detectaibugs version
 # Configure API key
 detectaibugs set-api-key=YOUR_KEY
 
-# Install/reinstall slash command
+# Install/reinstall slash command for Claude
 detectaibugs --setup-claude
+
+# Codex support (paused until v2.1.0 - Nov 26th)
+# detectaibugs --setup-codex
 
 # Reinstall git reminders
 detectaibugs reinstall-git-reminder
